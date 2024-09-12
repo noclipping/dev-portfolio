@@ -1,17 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import ParticlesBackground from './components/ParticlesBackground';
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,11 +15,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className="relative bg-black min-h-screen">
+        <ParticlesBackground />
+        <div className="relative z-10 flex items-center justify-center min-h-screen pointer-events-none">
+        <div className="bg-black bg-opacity-60 border border-red-600 p-8 rounded-lg max-w-xl w-full text-center pointer-events-auto">
         {children}
+      </div>
+</div>
+
       </body>
     </html>
   );
