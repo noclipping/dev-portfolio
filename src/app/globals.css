@@ -9,7 +9,17 @@
   font-weight: 400;
   font-style: normal;
 }
-
+.links{
+  display:inline
+}
+.links li{
+  display: inline;
+  margin: 12px;
+}
+.links li:hover{
+  cursor:pointer;
+  color:red;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;

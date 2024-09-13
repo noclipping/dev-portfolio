@@ -15,7 +15,7 @@ const ParticlesBackground = () => {
           opacity: { value: 0.5 },
           size: { value: 3 },
           move: { enable: true, speed: 1, bounce: false },
-          line_linked: { enable: true, distance: 200, color: '#f20212', opacity: 0.4, width: 1 },
+          line_linked: { enable: true, distance: 300, color: '#f20212', opacity: 0.4, width: 1 },
         },
         interactivity: {
           detect_on: 'canvas',
