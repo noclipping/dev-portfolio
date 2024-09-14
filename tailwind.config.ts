@@ -14,6 +14,8 @@ const config: Config = {
       },
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+        sourceCode: ['Source Code Pro', 'monospace']
       },
       keyframes: {
         expand: {
